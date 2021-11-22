@@ -2,7 +2,7 @@
 spring:
   profiles:
     active: dev # 激活开发环境配置
-#---
+---
 server:
   port: 8001
 mybatis:
@@ -34,7 +34,7 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
-#---
+---
 server:
   port: 8001
 mybatis:
