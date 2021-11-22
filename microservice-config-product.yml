@@ -2,7 +2,7 @@
 spring:
   profiles:
     active: dev # 激活开发环境配置
----
+#---
 server:
   port: 8001
 mybatis:
@@ -34,7 +34,7 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
----
+#---
 server:
   port: 8001
 mybatis:
@@ -44,7 +44,7 @@ mybatis:
 spring:
   profiles: prod # 生产环境
   application:
-    name: microservice-product-config			# ******服务名*******
+    name: microservice-product-config123			# ******服务名*******
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -68,4 +68,4 @@ eureka:
     prefer-ip-address: true 
     
 emp:
-  name:78434
+  name:78434rr
